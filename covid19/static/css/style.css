@@ -41,7 +41,7 @@ section#acesso aside{
     height: 70%;
     width: 80%;
 }
-section#acesso aside div{
+#box-acesso{
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -60,9 +60,75 @@ section#acesso aside div h2{
     color: #b72160;
 }
 .box-login{
+    align-items: center;
     border-radius: 20%;
+    display: flex;
     height: 90%;
     width: 75%;
+}
+.box-login header{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90%;
+    width: 100%;
+}
+.items-acesso{
+    align-items: center;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 80%;
+}
+.items-acesso:nth-child(1) button{
+    background-color: #3f5da6;
+    border: none;
+    border-radius: 15px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 12pt;
+    font-weight: bold;
+    height: 85%;
+    width: 90%;
+}
+.items-acesso:nth-child(2) button{
+    background-color: #ea4235;
+    border: none;
+    border-radius: 15px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 12pt;
+    font-weight: bold;
+    height: 85%;
+    width: 90%;
+}
+.items-acesso:nth-child(3) strong{
+    color: #3f358e;
+    font-size: 24pt;
+}
+.items-acesso:nth-child(4) input, .items-acesso:nth-child(5) input{
+    border: 2px solid #808080;
+    border-radius: 15px;
+    color: #808080;
+    height: 85%;
+    outline: 0;
+    padding-left: 15px;
+    width: 87%;
+}
+/* .items-acesso:nth-child(4) input::placeholder, .items-acesso:nth-child(5) input::placeholder{
+    margin-left: 5px;
+} */
+.items-acesso:nth-child(6) div{
+    align-items: center;
+    display: flex;    
+    justify-content: space-between;
+    width: 95%;
+}
+.items-acesso:nth-child(6) div a{
+    color: #3f358e;
+    font-size: 10pt;
 }
 section#acesso aside div:first-child article {
     border: 3px solid #3f358e;
