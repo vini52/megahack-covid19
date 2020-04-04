@@ -1,0 +1,92 @@
+body{
+    display: grid;
+    grid-template-areas:
+                        'main main main main'
+                        'footer footer footer footer';
+    grid-template-rows: 360vh 50vh;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: #e0d7d0;
+    height: 15vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+main{
+    grid-area: main;
+    margin-top: 15vh;
+}
+main section#header{
+    background-color: red;
+    height: 90vh;
+}
+main section#projeto{
+    background-color: green;
+    height: 90vh;
+}
+main section#acesso{
+    align-items: center;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+}
+section#acesso aside{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    height: 70%;
+    width: 80%;
+}
+section#acesso aside div{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 45%;
+}
+.user-function-title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+}
+section#acesso aside div:first-child h2{
+    color: #3f358e;
+}
+section#acesso aside div h2{
+    color: #b72160;
+}
+.box-login{
+    border-radius: 20%;
+    height: 90%;
+    width: 75%;
+}
+section#acesso aside div:first-child article {
+    border: 3px solid #3f358e;
+    box-shadow: -20px 15px #87b2b9;
+}
+section#acesso aside div:last-child article{
+    border: 3px solid #b72160;
+    box-shadow: -20px 15px #d05a8a;
+}
+main section#servicos{
+    background-color: blue;
+    height: 90vh;
+}
+footer{
+    background-color: #d05a8a;
+    grid-area: footer;
+}
+::-webkit-scrollbar{
+    background-color: #e0d7d0;
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #bc376e;
+}
+::-webkit-scrollbar-track{
+    background-color: #ddbec2;
+}
