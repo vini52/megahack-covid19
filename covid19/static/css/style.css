@@ -31,8 +31,14 @@ main section#acesso{
     align-items: center;
     background-color: #ffffff;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     height: 90vh;
+}
+section#acesso div#logo-section{
+    display: flex;
+    justify-content: start;
+    width: 100%;
 }
 section#acesso aside{
     align-items: center;
@@ -50,7 +56,7 @@ section#acesso aside{
     width: 45%;
 }
 .user-function-title{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Gilroy', sans-serif;
     margin: 0;
 }
 section#acesso aside div:first-child h2{
@@ -76,8 +82,8 @@ section#acesso aside div h2{
 }
 .items-acesso{
     align-items: center;
-    /* background-color: red; */
     display: flex;
+    font-family: 'Gilroy', sans-serif;
     justify-content: center;
     height: 50px;
     width: 80%;
@@ -85,7 +91,7 @@ section#acesso aside div h2{
 .items-acesso:nth-child(1) button{
     background-color: #3f5da6;
     border: none;
-    border-radius: 15px;
+    border-radius: 18px;
     color: #ffffff;
     cursor: pointer;
     font-size: 12pt;
@@ -96,7 +102,7 @@ section#acesso aside div h2{
 .items-acesso:nth-child(2) button{
     background-color: #ea4235;
     border: none;
-    border-radius: 15px;
+    border-radius: 18px;
     color: #ffffff;
     cursor: pointer;
     font-size: 12pt;
@@ -109,17 +115,25 @@ section#acesso aside div h2{
     font-size: 24pt;
 }
 .items-acesso:nth-child(4) input, .items-acesso:nth-child(5) input{
-    border: 2px solid #808080;
-    border-radius: 15px;
+    border: 2.45px solid #808080;
+    border-radius: 21px;
     color: #808080;
-    height: 85%;
+    font-weight: bold;
+    height: 82%;
     outline: 0;
     padding-left: 15px;
     width: 87%;
 }
-/* .items-acesso:nth-child(4) input::placeholder, .items-acesso:nth-child(5) input::placeholder{
-    margin-left: 5px;
-} */
+#box-acesso:nth-child(1) .box-login header .items-acesso:nth-child(4) input:focus, #box-acesso:nth-child(1) .box-login header div.items-acesso:nth-child(5) input:focus{
+    border-color: #3f358e;
+    color: #3f358e;
+    transition: 0.4s;
+}
+#box-acesso:nth-child(2) .box-login header .items-acesso:nth-child(4) input:focus, #box-acesso:nth-child(2) .box-login header div.items-acesso:nth-child(5) input:focus{
+    border-color: #b72160;
+    color: #b72160;
+    transition: 0.4s;
+}
 .items-acesso:nth-child(6) div{
     align-items: center;
     display: flex;    
@@ -129,6 +143,13 @@ section#acesso aside div h2{
 .items-acesso:nth-child(6) div a{
     color: #3f358e;
     font-size: 10pt;
+    font-weight: bold;
+}
+#box-acesso:nth-child(2) .box-login header .items-acesso:nth-child(6) div a{
+    color: #b72160;
+}
+.items-acesso:nth-child(6) div a:hover{
+    text-decoration: none;
 }
 section#acesso aside div:first-child article {
     border: 3px solid #3f358e;
