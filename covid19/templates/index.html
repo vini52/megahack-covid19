@@ -6,22 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
-    <title>Mega Hack Covid-19</title>
+    <title>Mandacaru</title>
     <script src="{% static 'js/script.js' %}" defer></script>
 </head>
 <body>
     <nav>
-        
+        <a href="#header">
+            <img src="{% static 'img/zap.png' %}" alt="logotipo">
+        </a>
+        <ul>
+            <li>
+                <a href="#projeto">PROJETO</a>
+            </li>
+            <li>
+                <a href="#acesso">ACESSO</a>
+            </li>
+            <li>
+                <a href="#servicos">SERVIÇOS</a>
+            </li>
+            <li>
+                <a href="#contato">CONTATO</a>
+            </li>
+            <li>
+                <button>
+                    <img src="{% static 'img/login.png' %}" alt="Foto do usuário">
+                </button>
+            </li>
+        </ul>
     </nav>
     <main>
         <section id="header">
-
+            <div>
+                <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h1>
+            </div>
         </section>
         <section id="projeto">
 
         </section>
         <section id="acesso">
-            <div id="logo-section">
+            <div class="logo-section">
             <img src="{% static 'img/acess.png' %}" alt="">
             </div>
             <aside>
@@ -84,10 +107,17 @@
             </aside>
         </section>
         <section id="servicos">
+            <div class="logo-section">
+                <img src="{% static 'img/serv.png' %}" alt="">
+            </div>
+            <aside>
+                <div>
 
+                </div>
+            </aside>
         </section>
     </main>
-    <footer>
+    <footer id="contato">
         
     </footer>
 </body>

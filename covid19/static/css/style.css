@@ -1,31 +1,82 @@
+*{
+    scroll-behavior: smooth;
+}
 body{
+    background-image: url('/static/img/fundo.png');
+    background-size: cover;
     display: grid;
     grid-template-areas:
                         'main main main main'
                         'footer footer footer footer';
-    grid-template-rows: 360vh 50vh;
+    grid-template-rows: 400vh 50vh;
     margin: 0;
     padding: 0;
 }
 nav{
-    background-color: #e0d7d0;
-    height: 15vh;
+    align-items: center;
+    background: #e0d7d0;
+    display: flex;
+    height: 10vh;
+    justify-content: space-around;
+    margin: -1px;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 101%;
     z-index: 1000;
+}
+nav ul{
+    align-items: center;
+    display: flex;
+    font-family: 'Gilroy', sans-serif;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+    width: 60%;
+}
+nav ul li a{
+    color: #3f358e;
+    font-size: 20pt;
+    font-weight: bold;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    border-bottom: 3px solid #b72160;
+    color: #3f5da6;
+    transition: 0.3s all;
+}
+nav ul li button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: 0;
 }
 main{
     grid-area: main;
-    margin-top: 15vh;
+    margin-top: 10vh;
 }
 main section#header{
-    background-color: red;
-    height: 90vh;
+    align-items: center;
+    background-attachment: fixed;
+    background-image: url('/static/img/back.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    height: 100vh;
+}
+main section#header div{
+    display: flex;
+    height: 100%;
+    width: 40%;
+}
+main section#header div h1{
+    color: #ffffff;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 30pt;
 }
 main section#projeto{
-    background-color: green;
-    height: 90vh;
+    background:none;
+    background-position: 200px;
+    height: 100vh;
 }
 main section#acesso{
     align-items: center;
@@ -33,9 +84,9 @@ main section#acesso{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 90vh;
+    height: 100vh;
 }
-section#acesso div#logo-section{
+section#acesso div.logo-section{
     display: flex;
     justify-content: start;
     width: 100%;
@@ -160,11 +211,27 @@ section#acesso aside div:last-child article{
     box-shadow: -20px 15px #d05a8a;
 }
 main section#servicos{
-    background-color: blue;
-    height: 90vh;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-evenly;
+}
+main section#servicos aside{
+    align-items: center;
+    display: flex;
+    height: 80%;
+    justify-content: center;
+    width: 100%;
+}
+main section#servicos aside div{
+    background-color: #3f358e;
+    height: 60%;
+    width: 90%;
 }
 footer{
     background-color: #d05a8a;
+    border-bottom: 10px solid #3f358e;
     grid-area: footer;
 }
 ::-webkit-scrollbar{
