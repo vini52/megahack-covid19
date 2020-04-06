@@ -9,13 +9,13 @@ body{
     grid-template-areas:
                         'main main main main'
                         'footer footer footer footer';
-    grid-template-rows: 400vh 70vh;
+    grid-template-rows: 430vh 70vh;
     margin: 0;
     padding: 0;
 }
 nav{
     align-items: center;
-    background: #ddbec2;
+    background: #d05a8a;
     display: flex;
     height: 10vh;
     justify-content: space-around;
@@ -35,14 +35,14 @@ nav ul{
     width: 60%;
 }
 nav ul li a{
-    color: #3f358e;
+    color: #ddbec2;
     font-size: 20pt;
     font-weight: bold;
     text-decoration: none;
 }
 nav ul li a:hover{
-    border-bottom: 3px solid #b72160;
-    color: #3f5da6;
+    border-bottom: 3px solid #ffffff;
+    color: #ffffff;
     transition: 0.3s all;
 }
 nav ul li button{
@@ -57,7 +57,6 @@ main{
 }
 main section#header{
     align-items: center;
-    /* background-attachment: fixed; */
     background-image: url('/static/img/background.png');
     background-size: cover;
     display: flex;
@@ -76,8 +75,82 @@ main section#header div h1{
 }
 main section#projeto{
     background:none;
-    background-position: 200px;
-    height: 100vh;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    height: 130vh;
+    justify-content: space-around;
+    padding-left: 15px;
+}
+main section#projeto div:nth-child(1){
+    height: auto;
+    margin-left: -15px;
+    width: 100%;
+}
+main section#projeto div:nth-child(2){
+    border-left: 3px solid #b72160;
+    color: #333333;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 20pt;
+    font-weight: bold;
+    height: 16%;
+    padding-left: 15px;
+    width: 50%;
+}
+main section#projeto div:nth-child(2) p{
+    margin: 0;
+}
+main section#projeto div:nth-child(3){
+    align-items: center;
+    display: flex;
+    height: 41%;
+    justify-content: space-around;
+    width: 100%;
+}
+main section#projeto div:nth-child(3) aside{
+    align-items: center;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+    width: 20%;
+}
+main section#projeto div:nth-child(3) aside img{
+    height: 130px;
+    width: 130px;
+}
+main section#projeto div:nth-child(3) aside p{
+    color: #3f358e;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 14pt;
+    font-weight: bold;
+    text-align: center;
+}
+main section#projeto div:nth-child(4){
+    border: none;
+    height: 21%;
+    width: 100%;
+}
+main section#projeto div:nth-child(4) aside{
+    border: none;
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    width: 100%;
+}
+main section#projeto div:nth-child(4) img{
+    height: 50px;
+    width: 90%;
+}
+main section#projeto div:nth-child(4) aside p{
+    color: #b72160;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 14pt;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    width: 18%;
 }
 main section#acesso{
     align-items: center;
