@@ -226,9 +226,33 @@ main section#servicos aside{
     width: 100%;
 }
 main section#servicos aside div{
+    align-items: center;
     background-color: #3f358e;
+    display: flex;
+    justify-content: space-around;
     height: 60%;
     width: 90%;
+}
+main section#servicos aside div div{
+    align-items: flex-end;
+    background-image: url(/static/img/corte.jpg);
+    background-size: cover;
+    display: flex;
+    height: 90%;
+    width: 20%;
+}
+main section#servicos aside div div div{
+    background: none;
+    background-color: rgba(255, 255, 255, 0.7);
+    flex-direction: column;
+    height: 20%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+main section#servicos aside div div div h2, h3{
+    font-family: 'Gilroy', sans-serif;
+    margin: 0 5px 0 0;
 }
 footer{
     background-color: #d05a8a;
@@ -296,18 +320,18 @@ footer aside div:last-child{
 #input-newsletter-button input::placeholder{
     color: #ffffff;
     font-family: 'Gilroy', sans-serif;
-    font-size: 14pt;
+    font-size: 12pt;
     font-weight: bold;
 }
 #input-newsletter-button button{
-    background: #ffffff;
+    background: none;
     border: none;
     color: #d05a8a;
     cursor: pointer;
     font-family: 'Gilroy', sans-serif;
     font-size: 14pt;
     font-weight: bold;
-    height: 35%;
+    height: 100%;
     outline: 0;
     width: 20%;
 }
@@ -346,8 +370,39 @@ footer aside div:last-child{
     font-size: 16pt;
 }
 #second-contact{
-    background-color: teal;
-    width: 45%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: space-evenly;
+    width: 35%;
+}
+#second-contact div{
+    align-items: center;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+}
+#second-contact p{
+    color: #ffffff;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 14pt;
+    font-weight: bold;
+    margin: 1px;
+}
+#flex-footer-2{
+    align-items: center;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 14pt;
+    font-weight: bold;
+    justify-content: space-evenly;
+}
+#flex-footer-2 img{
+    cursor: pointer;
 }
 ::-webkit-scrollbar{
     background-color: #e0d7d0;
