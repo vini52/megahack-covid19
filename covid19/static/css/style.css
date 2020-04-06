@@ -2,19 +2,20 @@
     scroll-behavior: smooth;
 }
 body{
+    background-attachment: fixed;
     background-image: url('/static/img/fundo.png');
     background-size: cover;
     display: grid;
     grid-template-areas:
                         'main main main main'
                         'footer footer footer footer';
-    grid-template-rows: 400vh 50vh;
+    grid-template-rows: 400vh 70vh;
     margin: 0;
     padding: 0;
 }
 nav{
     align-items: center;
-    background: #e0d7d0;
+    background: #ddbec2;
     display: flex;
     height: 10vh;
     justify-content: space-around;
@@ -56,8 +57,8 @@ main{
 }
 main section#header{
     align-items: center;
-    background-attachment: fixed;
-    background-image: url('/static/img/back.jpg');
+    /* background-attachment: fixed; */
+    background-image: url('/static/img/background.png');
     background-size: cover;
     display: flex;
     justify-content: flex-end;
@@ -232,7 +233,121 @@ main section#servicos aside div{
 footer{
     background-color: #d05a8a;
     border-bottom: 10px solid #3f358e;
+    display: flex;
+    flex-direction: column;
     grid-area: footer;
+    justify-content: space-evenly;
+}
+footer aside{
+    display: flex;
+    height: 75%;
+    justify-content: space-around;
+    width: 100%;
+}
+footer aside div:first-child{
+    border-right: 3px solid #ffffff;
+    height: 100%;
+    width: 70%;
+}
+footer aside div:last-child{
+    height: 100%;
+    width: 28%;
+}
+#flex-footer{
+    display: flex;
+    flex-direction: column;
+}
+#input-newsletter{
+    align-items: center;
+    display: flex;
+    height: 40%;
+    justify-content: center;
+    width: 100%;
+}
+#input-newsletter label{
+    color: #ffffff;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 16pt;
+    font-weight: bold;
+    width: 35%;
+}
+#input-newsletter-button{
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 40px;
+    display: flex;
+    height: 35%;
+    padding: 2px;
+    width: 45%;
+}
+#input-newsletter-button input{
+    background-color: #d05a8a;
+    border: none;
+    border-radius: 35px;
+    color: #ffffff;
+    font-size: 12pt;
+    font-weight: bold;
+    height: 90%;
+    margin-left: 2px;
+    outline: 0;
+    padding-left: 15px;
+    width: 80%;
+}
+#input-newsletter-button input::placeholder{
+    color: #ffffff;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 14pt;
+    font-weight: bold;
+}
+#input-newsletter-button button{
+    background: #ffffff;
+    border: none;
+    color: #d05a8a;
+    cursor: pointer;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 14pt;
+    font-weight: bold;
+    height: 35%;
+    outline: 0;
+    width: 20%;
+}
+#contact-footer{
+    display: flex;
+    height: 60%;
+    width: 100%;
+}
+#first-contact{
+    align-items: center;
+    display: flex;
+    border: none;
+    flex-direction: column;
+    height: 80%;
+    width: 55%;
+}
+#first-contact div{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+#first-contact p{
+    color: #ffffff;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 12pt;
+    font-weight: bold;
+}
+#first-contact div strong{
+    color: #ffffff;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 22pt;
+    font-weight: bold;
+}
+#first-contact div p{
+    font-size: 16pt;
+}
+#second-contact{
+    background-color: teal;
+    width: 45%;
 }
 ::-webkit-scrollbar{
     background-color: #e0d7d0;
