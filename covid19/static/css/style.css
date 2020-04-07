@@ -3,7 +3,7 @@
 }
 body{
     background-attachment: fixed;
-    background-image: url('/static/img/fundo.png');
+    background-image: url('/static/img/fundo_cz.png');
     background-size: cover;
     display: grid;
     grid-template-areas:
@@ -15,15 +15,21 @@ body{
 }
 nav{
     align-items: center;
-    background: #d05a8a;
+    background-image: url('/static/img/fundo_cz.png');
+    /* background: #d05a8a; */
+    background-size: cover;
     display: flex;
     height: 10vh;
     justify-content: space-around;
     margin: -1px;
     position: fixed;
     top: 0;
-    width: 101%;
+    width: 100%;
     z-index: 1000;
+}
+nav a img{
+    height: 98%;
+    width: 200px;
 }
 nav ul{
     align-items: center;
@@ -35,14 +41,14 @@ nav ul{
     width: 60%;
 }
 nav ul li a{
-    color: #ddbec2;
+    color: #b72160;
     font-size: 20pt;
     font-weight: bold;
     text-decoration: none;
 }
 nav ul li a:hover{
-    border-bottom: 3px solid #ffffff;
-    color: #ffffff;
+    border-bottom: 3px solid #3f358e;
+    color: #3f358e;
     transition: 0.3s all;
 }
 nav ul li button{
@@ -57,6 +63,7 @@ main{
 }
 main section#header{
     align-items: center;
+    background-attachment: fixed;;
     background-image: url('/static/img/background.png');
     background-size: cover;
     display: flex;
@@ -66,12 +73,16 @@ main section#header{
 main section#header div{
     display: flex;
     height: 100%;
-    width: 40%;
+    width: 33%;
 }
 main section#header div h1{
     color: #ffffff;
     font-family: 'Gilroy', sans-serif;
     font-size: 30pt;
+}
+main section#header div h1 strong{
+    color: #d05a8a;
+    font-weight: bolder;
 }
 main section#projeto{
     background:none;
@@ -308,13 +319,30 @@ main section#servicos aside div{
 }
 main section#servicos aside div div{
     align-items: flex-end;
-    background-image: url(/static/img/corte.jpg);
-    background-size: cover;
+    cursor: pointer;
     display: flex;
     height: 90%;
     width: 20%;
 }
-main section#servicos aside div div div{
+main section#servicos aside div div:first-child{
+    background-image: url(/static/img/corte.jpg);
+    background-size: cover;
+}
+main section#servicos aside div div:nth-child(2){
+    background-image: url(/static/img/serv1.jpeg);
+    background-size: cover;
+}
+main section#servicos aside div div:nth-child(3){
+    background-image: url(/static/img/serv2.jpeg);
+    background-size: cover;
+}
+main section#servicos aside div div:nth-child(4){
+    background-image: url(/static/img/serv3.jpeg);
+    background-size: cover;
+}
+main section#servicos aside div div footer{
+    align-items: flex-end;
+    color: #b72160;
     background: none;
     background-color: rgba(255, 255, 255, 0.7);
     flex-direction: column;
@@ -323,7 +351,7 @@ main section#servicos aside div div div{
     padding: 0;
     width: 100%;
 }
-main section#servicos aside div div div h2, h3{
+main section#servicos aside div div footer h2, h3{
     font-family: 'Gilroy', sans-serif;
     margin: 0 5px 0 0;
 }
